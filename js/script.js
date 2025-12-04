@@ -50,6 +50,31 @@ function mostrarMensagemFinal() {
     `;
 }
 
+function voltarEtapa1() {
+    document.getElementById("etapa1").style.display = "none";
+    document.getElementById("cardInicial").style.display = "block";
+}
+
+function voltarEtapa2() {
+    document.getElementById("etapa2").style.display = "none";
+    document.getElementById("etapa1").style.display = "block";
+}
+
+function voltarEtapa3() {
+    document.getElementById("etapa3").style.display = "none";
+    document.getElementById("etapa2").style.display = "block";
+}
+
+function voltarFinal() {
+    document.getElementById("final").style.display = "none";
+    document.getElementById("etapa3").style.display = "block";
+}
+
+function resetFotos() {
+    removerFotos();
+    document.body.style.height = "auto";
+}
+
 function animarTexto() {
 
     removerFotos(); // ← REMOVE AS FOTOS AO CLICAR EM LER MAIS
@@ -123,6 +148,7 @@ function espalharFotos() {
         "assets/f10.png"
     ];
 
+    resetFotos(); // Remove fotos antigas e reseta altura
     document.querySelectorAll('.foto-solta').forEach(el => el.remove());
 
     const finalCard = document.getElementById("final");

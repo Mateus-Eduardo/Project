@@ -16,25 +16,32 @@
         <p>Eu sei que seu dia não foi fácil…</p>
         <p>E em dias que não são fáceis precisamos do apoio de nossas melhores pessoas.</p>
         <button onclick="mostrarEtapa1()">Próximo <span class="heart-small">❤️</span></button>
+
     </div>
 
     <!-- ETAPA 1 -->
     <div class="card" id="etapa1" style="display:none;">
         <h2>Vou lhe contar sobre uma pessoa que conheço…</h2>
+        <button onclick="voltarEtapa1()">⬅ Voltar</button>
         <button onclick="mostrarEtapa2()">Continuar ➜ <span class="heart-small">❤️</span></button>
+
     </div>
 
     <!-- ETAPA 2 -->
     <div class="card" id="etapa2" style="display:none;">
         <p>E acho que você conhece ela também 😌</p>
+        <button onclick="voltarEtapa2()">⬅ Voltar</button>
         <button onclick="mostrarEtapa3()">Quero ver ➜ <span class="heart-small">❤️</span></button>
+
     </div>
 
     <!-- ETAPA 3 (Foto) -->
     <div class="card" id="etapa3" style="display:none;">
         <p>Aqui está ela… 😍</p>
         <img id="foto1" class="photo" src="assets/foto1.jpg" style="display:block;" />
+        <button onclick="voltarEtapa3()">⬅ Voltar</button>
         <button onclick="mostrarMensagemFinal()">Continuar ➜ <span class="heart-small">❤️</span></button>
+
     </div>
 
     <!-- FINAL -->
@@ -42,6 +49,7 @@
         <h2>Vulgo minha Tranqueira</h2>
         <p>Uma garota que admiro muito… que não se abala por qualquer coisa, que sabe se virar sozinha e me inspira cada dia mais.❤️</p>
         <p id="mensagem"></p>
+            <button onclick="voltarFinal()">⬅ Voltar</button>
         <span class="heart">❤️</span>
     </div>
 
